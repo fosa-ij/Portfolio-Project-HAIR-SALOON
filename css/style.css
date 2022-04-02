@@ -1,0 +1,716 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 37.5%;
+}
+body {
+  font-size: 2.4rem;
+  font-weight: 100;
+  font-family: 'Roboto Serif', sans-serif;
+  width: 100%;
+  /* background: #141005; */
+  background: #251d04;
+  color: #dbdbdb;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.hidden, .hiddenThree
+  {
+    display: none;
+  }
+.headerNav {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+  background:#130f03;
+}
+/* nav * {
+  width: 10%;
+} */
+li {
+  display: inline-block;
+  /* justify-content: space-between; */
+  list-style: none;
+  /* text-align: center; */
+}
+/* .headerNav ul li:nth-child(5)
+  {
+    position: relative;
+    left: 2.8%;
+  } */
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+}
+nav {
+  text-align: center;
+}
+nav > a {
+  padding-top: 24px;
+}
+.bookkk {
+  padding: 15px 0;
+}
+.bookkk:hover {
+  background-color: #251d04;
+}
+li a {
+  padding: 15px 20px;
+}
+li a:hover {
+  background-color: #251d04;
+
+}
+.cursive {
+  font-family: 'Pacifico';
+  font-size: 3.5rem;
+  padding-top: 14px;
+}
+
+/* ***************************************
+BIG SECTION
+*************************************** */
+.bigSection {
+  position: relative;
+  padding-top: 12vh;
+  /* background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100vh;
+}
+.bigSection h1 {
+  font-size: 10rem;
+  font-weight: 200;
+}
+.bigSection .firstBigSection {
+  padding-left: 18%;
+}
+.bigSection img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* left: 0; */
+  z-index: -1;
+  /* width: 100vw; */
+  height: 95vh;
+  width: 61vw;
+  box-shadow: -8px 2px 15px 15px #130f03;
+}
+.discountSection {
+  position: relative;
+  z-index: -2;
+  right: 80px;
+  margin-top: 12rem;
+  margin-left: -18%;
+  background:#130f03;
+  padding: 20px 80px;
+}
+.firstBigSection span {
+  background:#130f03;
+  padding: 18px 13px;
+}
+
+
+.first_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 8rem;
+  height: 40vh;
+}
+.first_section > section {
+width: 17vw;
+text-align: center;
+line-height: 3.8rem;
+}
+.first_section img {
+  border-radius: 20px;
+  height: 57px;
+}
+.second_section {
+  background: #130f03;
+  width: 100%;
+}
+.second_section .cover {
+  display: flex;
+  /* position: relative; */
+  /* left: ; */
+  /* justify-content: space-evenly; */
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15rem;
+  width: 100%;
+  height: 60vh;
+
+}
+.second_section .onei {
+  width: 30%;
+  margin-right: 5%;
+  line-height: 5rem;
+}
+.second_section .twoi {
+  width: 36%;
+}
+.twoi img{
+  height: 60vh;
+}
+
+.third_section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35rem;
+  margin-left: 15rem;
+}
+.third_section > section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  width: 17vw;
+  /* text-align: center; */
+}
+:is(.oneOne, .twoTwo, .threeThree) img {
+  height: 50vh;
+  width: 20vw;
+  object-fit: cover;
+  
+}
+.oneOne, .twoTwo, .threeThree {
+ 
+}
+:is(.oneOne, .twoTwo, .threeThree) div {
+  background: #130f03;
+  padding: 7px 8px;
+  width: 70%;
+  text-align: center;
+  position: relative;
+  left: 19%;
+  bottom: 30px;
+}
+.h4span {
+  margin: 10px;
+}
+
+
+.fourth_section {
+  display: flex;
+  margin-top: 25rem;
+  background: #130f03;
+  justify-content: center;
+  align-items: center;
+}
+.fourth_section > section {
+  margin-right: 10%;
+}
+.fourth_section > section h4 {
+  font-size: 3rem;
+}
+.fourth_section img 
+  {
+    width: 40%;
+  }
+.fifthOne {
+  text-align: center;
+}
+.fifth_section {
+  margin-top: 25rem;
+}
+.last > section {
+  width: 15%;
+  margin-right: .8%;
+}
+.last img{
+  width: 100%;
+  margin-bottom: 2%;
+}
+.firstSetOne, .secondSet, .thirdSet {
+  height: 30vh;
+  object-fit: contain;
+}
+.firstSet, .secondSetOne, .thirdSetOne {
+  height: 50vh;
+  object-fit: contain;
+}
+.last {
+  display: flex;
+  flex-basis: 50%;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+/****************************
+MEDIA QUERIES
+*****************************/
+@media screen and (max-width: 1201px) {
+.fourth_section > section 
+  {
+    margin-left: 3%;
+  }
+.second_section .twoi 
+  {
+    margin-right: 5%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1151px){
+.bookkk
+  {
+    width: 13%;
+  }
+/* .headerNav ul li:nth-child(5)
+  {
+    position: relative;
+    left: %;
+  } */
+.headerNav ul li:nth-child(1)
+  {
+    position: relative;
+    left: 2%;
+  }
+.headerNav ul li:nth-child(2)
+  {
+    position: relative;
+    left: 1%;
+  }
+ul
+  {
+    width: 48%;
+    padding-inline-start: 0;
+    position: relative;
+    right: 3%;
+  }
+.headerNav
+  {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 980px) {
+.onei h2 
+  {
+    margin-bottom: 5px;
+  }
+.onei p 
+  {
+    margin: 5px 0 5px 0;
+  }
+.firstBigSection h1 
+  {
+  font-size: 9rem;
+  }
+.first_section > section
+  {
+    width: 22vw;
+  }
+.second_section .onei
+  {
+    width: 33%;
+    margin-right: 5%;
+    line-height: 4.7rem;
+  }
+.second_section .twoi 
+  {
+    margin-right: 8%;
+  }
+.firstBigSection span 
+  {
+    padding: 13px 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+html 
+  {
+    font-size: 30%;
+  }
+.fourth_section img 
+  {
+    width: 50%;
+  }
+:is(.oneOne, .twoTwo, .threeThree) div 
+  {
+    font-size: 1.8rem;
+    width: 60%;
+  }
+:is(.oneOne, .twoTwo, .threeThree) section 
+  {
+    width: 30%;
+  }
+:is(.oneOne, .twoTwo, .threeThree) img 
+  {
+    width: 100%;
+  }
+ .third_section > section 
+   {
+    width: 27%;
+   }
+.h4span
+  {
+    margin: 3px;
+  }
+.third_section 
+  {
+    margin-top: 27rem;
+  }
+.second_section .onei 
+  {
+    width: 40%;
+    line-height: 5rem;
+  }
+.first_section > section 
+  {
+    width: 25%;
+  }
+.first_section img 
+  {
+    border-radius: 10px;
+    height: 40px;
+  }
+.firstBigSection span 
+  {
+    padding: 9px 7px;
+  }
+.hiddenTwo 
+  {
+    display: none;
+  }
+.hidden
+  {
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: #130f034f;
+  }
+.hidden > div 
+  {
+    width: 70%;
+  }
+.hidden ul li .bookkk
+  {
+    width: 15%;
+  }
+.hidden ul 
+  {
+    width: 75%;
+    padding-inline-start: 20px;
+  }
+.cursive
+  {
+    padding: 7px 10px;
+    font-size: 4.3rem;
+  }
+li a
+  {
+    padding: 8px 10px;
+  }  
+.headerNav 
+  {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 701px){
+.hidden ul 
+  {
+    width: 96%;
+    padding-inline-start: 20px;
+  }
+/* adjust the make your momentum text */
+}
+@media screen and (max-width: 665px){
+.bigSection img 
+  {
+    height: 80vh;
+    width: 100vw;
+  }
+.first_section
+  {
+    flex-direction: column;
+    margin-top: 12rem;
+    height: 90vh;
+    align-items: center;
+  }
+.first_section > section 
+  {
+    width: 50%;
+  }
+.hiddenThree 
+  {
+    display: none;
+  }
+.second_section .cover
+  {
+    margin-top: 10rem;
+  }
+.bigSection 
+  {
+    height: 80vh;
+  }
+.discountSection
+  {
+    z-index: 2;
+    margin-top: 23rem;
+    background-color: #130f03e8;
+    margin-left: -5%;
+    padding: 15px 35px;
+    width: 70%;
+  }
+.discountSection span 
+  {
+    background-color: #130f0300;
+  }
+.third_section 
+  {
+    margin-top: 30rem;
+    margin-left: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+.third_section > section
+  {
+    width: 45%;
+  }
+:is(.oneOne, .twoTwo, .threeThree) img
+    {
+      height: 42vh;
+    }
+.firstBigSection > :is(p, span, div)
+  {
+    font-weight: 300;
+  }
+.second_section .cover
+  {
+    height: 50vh;
+  }
+.twoi img 
+  {
+    height: 45vh;
+  }
+.second_section .twoi
+  {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 550px){
+.hiddenThree
+  {
+    display: block;
+    font-size: 20px;
+  }
+.headerNav 
+  {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  }
+.hidden 
+  {
+    position: fixed;
+    background-color: #130f03f6;
+    z-index: 3;
+  }
+.toggleNav ul 
+  {
+    width: 100vw;
+    height: 28vh;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+.toggleNav li 
+  {
+    flex-basis: 50%;
+  }
+.toggleNav li:last-of-type 
+  {
+    flex-basis: 100%;
+
+  }
+.hideOnClick 
+  {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fifth_section {
+  margin-top: 25rem;
+  text-align: center;
+  width: 50%;
+}
+.last {
+  display: flex;
+  justify-content: center;
+}
+.last img { */
+  /* margin-right: 2%; */
+  
+/* }
+.firstSet, .secondSetOne, .thirdSetOne {
+  height: 50vh;
+  object-fit: contain;
+}
+.firstSetOne, .secondSet, .thirdSet {
+  height: 30vh;
+  object-fit: contain;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
+  width: 100%;
+  height: 30px;
+}
+header nav * {
+  float: left;
+ 
+}
+nav .cursive {
+  font-family: 'Satisfy', cursive;
+}
+header nav ul {
+  width: 76%;
+  text-align: center;
+}
+header nav li {
+  width: 11%;
+  list-style: none;
+}
+header nav a {
+  margin: 16px auto;
+}
+
+main {
+  background-image: url("head.jpg");
+  background-size: cover;
+  height: 80vh;
+  color: white;
+  
+}
+main h1 {
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5rem;
+}
+main > section {
+  position: relative;
+  top: 20vh;
+  left: 10%;
+}
+.first_section {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%; 
+  text-align: center;
+}
+.first_section section {
+float: left;
+width: 25%;
+margin: auto 4%;
+}
+
+.second_section { 
+  margin: auto 10%;
+  text-align: center;
+}
+.second_section section {
+  width: 48%;
+  float: left;
+  margin: auto 1%;
+  margin-top: 100px;
+}
+
+.third_section {
+  margin-top: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.third_section section {
+  float: left;
+  width: 32%;
+}
+
+.fourth_section {
+  margin-top: 100px;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+.fourth_section * {
+  padding-left: 6%;
+}
+
+.fifth_section {
+  text-align: center;
+  width: auto;
+  margin-top: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+} */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
