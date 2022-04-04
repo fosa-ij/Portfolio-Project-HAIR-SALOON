@@ -564,7 +564,7 @@ li a
 .second_section .cover
  {
     flex-direction: column;
-    height: 75vh; 
+    height: 85vh; 
     justify-content: space-around;
  }
 .second_section .onei
@@ -643,7 +643,7 @@ li a
 .bigSection
   {
   padding-top: 5rem;
-  height: 62vh;
+  height: 465px;
   }
 .last > section 
   {
