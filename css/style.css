@@ -169,7 +169,6 @@ line-height: 3.8rem;
   /* position: relative; */
   /* left: ; */
   /* justify-content: space-evenly; */
-  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin-top: 15rem;
@@ -564,7 +563,7 @@ li a
   }
 .second_section .cover
  {
-    height: 75vh; 
+    height: 75vh;
     justify-content: space-around;
  }
 .second_section .onei
