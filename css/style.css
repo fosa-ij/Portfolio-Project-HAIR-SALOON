@@ -563,7 +563,8 @@ li a
   }
 .second_section .cover
  {
-    height: 75vh;
+    flex-direction: column;
+    height: 75vh; 
     justify-content: space-around;
  }
 .second_section .onei
@@ -640,10 +641,37 @@ li a
     padding-left: 5%;
   }
 .bigSection
-{
+  {
   padding-top: 5rem;
   height: 62vh;
-}
+  }
+.last > section 
+  {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+.fifth_section .last
+  {
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+.last
+  {
+    display: flex;
+    /* flex-basis: 50%; */
+    margin-top: 5rem;
+    /* /* justify-content: center; */
+  }
+.last > section img 
+  {
+    object-fit: cover;
+    width: 90%;
+    margin-bottom: 0;
+  }
 
 
 
