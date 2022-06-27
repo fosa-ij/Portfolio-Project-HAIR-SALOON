@@ -248,7 +248,7 @@ line-height: 3.8rem;
   margin-top: 25rem;
 }
 .last > section {
-  width: 15%;
+  width: 20%;
   margin-right: .8%;
 }
 .last img{
@@ -270,6 +270,40 @@ line-height: 3.8rem;
   justify-content: center;
 }
 
+footer {
+  background-color: rgba(0, 0, 0, 0.622);
+  min-height: 350px;
+  margin-top: 100px;
+}
+.footerFirstSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.footerSecondSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+.first_oneDiv {
+  width: 30%;
+}
+.first_twoDiv {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.first_twoDiv div > h4 {
+  margin-bottom: 12px ;
+}
+.first_twoDiv div > span {
+  padding-bottom: 10px;
+}
+.footerSecondSection div i {
+  padding: 15px 10px;
+  font-size: 20px;
+}
 /****************************
 MEDIA QUERIES
 *****************************/
@@ -444,6 +478,28 @@ li a
     width: 96%;
     padding-inline-start: 20px;
   }
+footer {
+  padding-left: 70px;
+}
+.footerFirstSection {
+  flex-direction: column;
+  padding-top: 40px;
+}
+.footerSecondSection {
+  justify-content: space-between;
+  padding: 60px 0;
+}
+.footerSecondSection div > p {
+  padding-right: 20px;
+}
+.first_oneDiv {
+  width: 80%;
+}
+.first_twoDiv {
+  width: 70%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 /* adjust the make your momentum text */
 }
 @media screen and (max-width: 665px){
@@ -672,8 +728,27 @@ li a
     width: 90%;
     margin-bottom: 0;
   }
-
-
+  footer {
+    padding-left: 20px;
+  }
+  .footerFirstSection {
+    flex-direction: column;
+  }
+  .footerSecondSection {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  .first_oneDiv {
+    width: 90%;
+  }
+  .first_twoDiv {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .first_twoDiv div {
+    width: 40%;
+  }
+}
 
 
 
