@@ -248,20 +248,23 @@ line-height: 3.8rem;
   margin-top: 25rem;
 }
 .last > section {
-  width: 20%;
-  margin-right: .8%;
+  width: 23%;
+  margin-right: 1%;
+}
+.last > section + section + section {
+  margin-right: 0px;
 }
 .last img{
   width: 100%;
   margin-bottom: 2%;
 }
 .firstSetOne, .secondSet, .thirdSet {
-  height: 30vh;
-  object-fit: contain;
+  height: 280px;
+  object-fit: cover;
 }
 .firstSet, .secondSetOne, .thirdSetOne {
-  height: 50vh;
-  object-fit: contain;
+  height: 400px;
+  object-fit: cover;
 }
 .last {
   display: flex;
@@ -395,6 +398,10 @@ ul
   {
     padding: 13px 10px;
   }
+.last > section {
+    width: 30%;
+    margin-right: 1%;
+}
 }
 @media screen and (max-width: 769px) {
 html 
