@@ -288,17 +288,31 @@ footer {
 .first_oneDiv {
   width: 30%;
 }
+.first_oneDiv h2 {
+  font-size: 6rem;
+  margin: 0px;
+}
+.first_oneDiv p {
+  line-height: 5rem;
+}
 .first_twoDiv {
   width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+.first_twoDiv ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+  margin: 0px 0px;
+}
 .first_twoDiv div > h4 {
   margin-bottom: 12px ;
 }
 .first_twoDiv div > span {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .footerSecondSection div i {
   padding: 15px 10px;
@@ -740,6 +754,13 @@ footer {
   }
   .first_oneDiv {
     width: 90%;
+  }
+  .first_oneDiv p {
+    line-height: 5rem;
+  }
+  .first_oneDiv h2 {
+  font-size: 6rem;
+  margin: 0px;
   }
   .first_twoDiv {
     justify-content: space-between;
