@@ -38,13 +38,13 @@ body {
 /* LAYOUT
 /*******************************************/
 
-.hidden, .hiddenThree
+.hidden-bar
   {
     display: none;
   }
 .headerNav {
   display: flex;
-  flex-basis: 100%;
+  flex-wrap: wrap;  
   justify-content: space-around;
   background:#130f03;
 }
@@ -321,6 +321,9 @@ footer {
   padding: 15px 10px;
   font-size: 20px;
 }
+.btn {
+  display: none;
+}
 /****************************
 MEDIA QUERIES
 *****************************/
@@ -455,50 +458,65 @@ html
   {
     padding: 9px 7px;
   }
-.hiddenTwo 
-  {
+.ul {
     display: none;
-  }
-.hidden
-  {
-    display: block;
-    display: flex;
-    justify-content: center;
-    background-color: #130f034f;
-  }
-.hidden > div 
-  {
-    width: 70%;
-  }
-.hidden ul li .bookkk
-  {
-    width: 15%;
-  }
-.hidden ul 
-  {
-    width: 75%;
-    padding-inline-start: 20px;
-  }
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ul.show-menu {
+  display: flex;
+}
 .cursive
   {
     padding: 7px 10px;
     font-size: 4.3rem;
   }
+.headerNav ul li:nth-child(1) {
+    position: relative;
+    left: 5%;
+}
+.headerNav ul li:nth-child(2) {
+  position: relative;
+  left: 5%;
+}
+.headerNav ul li {
+  position: relative;
+  flex-basis: 50%;
+  margin: 15px 0;
+  left: 5%;
+}
 li a
   {
     padding: 8px 10px;
+    font-size: 3rem;
   }  
 .headerNav 
   {
-    justify-content: center;
+    justify-content: space-between;
   }
+.fa {
+    display: block;
+    font-size: 28px;
+    color: white;
+}
+.btn {
+  display: block;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    border: transparent;
+    background: transparent;
+}
 }
 @media screen and (max-width: 701px){
-.hidden ul 
+/* .hidden ul 
   {
     width: 96%;
     padding-inline-start: 20px;
-  }
+  } */
 footer {
   padding-left: 70px;
 }
@@ -521,6 +539,11 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.fa {
+  display: block;
+  font-size: 28px;
+  color: white;
+}
 /* adjust the make your momentum text */
 }
 @media screen and (max-width: 665px){
@@ -540,7 +563,7 @@ footer {
   {
     width: 50%;
   }
-.hiddenThree 
+.hidden-bar
   {
     display: none;
   }
@@ -596,20 +619,25 @@ footer {
   {
     margin-right: 5%;
   }
+  .fa {
+    display: block;
+    font-size: 28px;
+    color: white;
+}
 }
 @media screen and (max-width: 550px){
-.hiddenThree
-  {
+  .fa {
     display: block;
-    font-size: 20px;
-  }
+    font-size: 28px;
+    color: white;
+}
 .headerNav 
   {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0 4rem;
   }
-.hidden 
+/* .hidden 
   {
     position: fixed;
     background-color: #130f03f6;
@@ -623,7 +651,7 @@ footer {
     align-content: space-around;
     /* flex-direction: column; */
     /* align-items: center; */
-  }
+  /* }
 .toggleNav li 
   {
     flex-basis: 50%;
@@ -635,9 +663,9 @@ footer {
   }
 .hideOnClick 
   {
-    /* display: block; */
-    display: none;
-  }
+    display: block; */
+    /* display: none; */
+  /* } */
 .second_section .cover
  {
     flex-direction: column;
